@@ -1,0 +1,9 @@
+{
+  "name": "elora-website",
+  "private": true,
+  "type": "module",
+  "version": "1.0.0",
+  "dependencies": {
+    "puppeteer": "^25.3.0"
+  }
+}

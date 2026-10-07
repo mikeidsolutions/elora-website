@@ -1,0 +1,484 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Elora Behavioral Health · Psychiatric care built around you</title>
+<meta name="description" content="Elora Behavioral Health is a psychiatric practice led by Suzanne Perakathu, APRN, PMHNP-BC, built on hope and steady ground. Reach out to get started. It's a conversation, not an assessment.">
+<link rel="icon" type="image/png" href="brand_assets/Logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Karla:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+  :root{
+    --isabelline:#F4EEEB;
+    --card:#FBF9F7;
+    --pine:#292E1E;
+    --coin:#7A6B5E;
+    --taupe:#B3A696;
+    --sand:#EDE3D6;
+    --sun:#B5842E;
+    --sun-soft:#D9B878;
+    --ease:cubic-bezier(.25,.6,.3,1);
+  }
+
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+  body{
+    background:var(--isabelline);
+    color:var(--pine);
+    font-family:'Karla',sans-serif;
+    line-height:1.7;
+    -webkit-font-smoothing:antialiased;
+  }
+
+  .font-display{font-family:'Cormorant Garamond',serif}
+  .text-pine{color:var(--pine)}
+  .text-coin{color:var(--coin)}
+  .text-sun{color:var(--sun)}
+  .text-isabelline{color:var(--isabelline)}
+  .bg-isabelline{background:var(--isabelline)}
+  .bg-card{background:var(--card)}
+  .bg-sand{background:var(--sand)}
+  .bg-pine{background:var(--pine)}
+  .border-taupe{border-color:var(--taupe)}
+  .border-taupe-soft{border-color:color-mix(in oklab, var(--taupe) 45%, transparent)}
+
+  h1,h2,h3,.font-display{letter-spacing:-.02em}
+
+  .btn{
+    display:inline-flex;
+    align-items:center;
+    gap:.5rem;
+    font-family:'Karla',sans-serif;
+    font-weight:600;
+    font-size:15px;
+    padding:.85rem 1.75rem;
+    border-radius:999px;
+    transition:transform 240ms var(--ease), box-shadow 240ms var(--ease), background-color 240ms var(--ease);
+    white-space:nowrap;
+  }
+  .btn-primary{
+    background:var(--pine);
+    color:var(--isabelline);
+    box-shadow:0 1px 2px rgba(41,46,30,.15), 0 8px 20px -8px rgba(41,46,30,.45);
+  }
+  .btn-primary:hover{transform:translateY(-2px); box-shadow:0 2px 4px rgba(41,46,30,.18), 0 14px 28px -10px rgba(41,46,30,.55)}
+  .btn-primary:active{transform:translateY(0)}
+  .btn-inverted{
+    background:var(--isabelline);
+    color:var(--pine);
+    box-shadow:0 1px 2px rgba(0,0,0,.1), 0 8px 20px -8px rgba(0,0,0,.35);
+  }
+  .btn-inverted:hover{transform:translateY(-2px); box-shadow:0 2px 4px rgba(0,0,0,.12), 0 14px 28px -10px rgba(0,0,0,.4)}
+  .btn-inverted:active{transform:translateY(0)}
+
+  a:focus-visible, button:focus-visible, summary:focus-visible{
+    outline:2px solid var(--sun);
+    outline-offset:3px;
+    border-radius:4px;
+  }
+
+  .link-underline{
+    position:relative;
+    color:var(--pine);
+    font-weight:600;
+    text-decoration:none;
+  }
+  .link-underline::after{
+    content:'';
+    position:absolute;
+    left:0; right:100%; bottom:-2px;
+    height:1.5px;
+    background:var(--sun);
+    transition:right 240ms var(--ease);
+  }
+  .link-underline:hover::after{right:0}
+
+  .card{
+    background:var(--card);
+    border:1px solid color-mix(in oklab, var(--taupe) 35%, transparent);
+    border-radius:16px;
+  }
+
+  .nav-link{
+    color:var(--coin);
+    font-weight:500;
+    font-size:14.5px;
+    transition:color 140ms var(--ease);
+  }
+  .nav-link:hover{color:var(--pine)}
+
+  /* signature motif: the elora mark used as an ambient watermark */
+  .mark-glow{
+    position:absolute;
+    pointer-events:none;
+    user-select:none;
+    z-index:0;
+  }
+
+  /* signature motif: the hero base illustration flows at its own natural size, directly in the hero's layout, so nothing ever crops it. A gradient band fuses its bottom edge into the next section. */
+  .hero-base{
+    display:block;
+    width:100%;
+    height:auto;
+    margin-top:clamp(-340px, -15vw, -60px);
+  }
+  .hero-base-fade{
+    display:block;
+    width:100%;
+    height:clamp(140px, 18vw, 260px);
+    background:#262E1E;
+    background:linear-gradient(180deg, rgba(38,46,30,1) 0%, rgba(38,46,30,.95) 20%, rgba(38,46,30,.8) 38%, rgba(38,46,30,.58) 54%, rgba(38,46,30,.36) 68%, rgba(38,46,30,.18) 80%, rgba(38,46,30,.06) 90%, rgba(244,238,236,1) 100%);
+  }
+  @media (max-width:767px){
+    .hero-base-fade{
+      height:90px;
+    }
+  }
+
+  @keyframes fadeRise{
+    from{opacity:0; transform:translateY(14px)}
+    to{opacity:1; transform:translateY(0)}
+  }
+  .hero-in{
+    opacity:0;
+    animation:fadeRise 640ms var(--ease) forwards;
+  }
+  .hero-in.d1{animation-delay:80ms}
+  .hero-in.d2{animation-delay:180ms}
+  .hero-in.d3{animation-delay:280ms}
+  .hero-in.d4{animation-delay:380ms}
+  @media (prefers-reduced-motion:reduce){
+    .hero-in{animation:none; opacity:1}
+  }
+
+  .grain{
+    position:absolute; inset:0;
+    opacity:.05;
+    mix-blend-mode:multiply;
+    pointer-events:none;
+  }
+
+  .faq summary{cursor:pointer; list-style:none}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq .chev{transition:transform 240ms var(--ease)}
+  .faq[open] .chev{transform:rotate(45deg)}
+  .faq-item{border-bottom:1px solid color-mix(in oklab, var(--taupe) 40%, transparent)}
+  .faq-item:last-child{border-bottom:none}
+
+  .mobile-menu{
+    max-height:0;
+    overflow:hidden;
+    transition:max-height 340ms var(--ease);
+  }
+  .mobile-menu.open{max-height:320px}
+</style>
+</head>
+<body class="bg-isabelline">
+
+<!-- shared SVG symbol: the Elora mark (sunrise over mountains), referenced as a watermark + in nav/footer -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="elora-mark" viewBox="-1 -1 122.03 62.98">
+      <path d="M76.57,42.02c0,9.51-7.64,8.22-17.15,8.22s-17.29,1.3-17.29-8.22,7.71-17.22,17.22-17.22,17.22,7.71,17.22,17.22Z" fill="#dcb56d"/>
+      <g>
+        <path d="M59.43,0c.33,3.76.49,7.53.55,11.29,0,3.74.23,7.63-.59,11.29-.72-3.76-.58-7.53-.55-11.29.09-3.74.15-7.62.59-11.29h0Z" fill="#dcb56d"/>
+        <path d="M65.02,23.26c.51-4.4,1.79-8.6,3.43-12.7-.65,4.36-1.66,8.64-3.43,12.7h0Z" fill="#dcb56d"/>
+        <path d="M82.32,6.84c-1.77,3.34-3.69,6.58-5.69,9.77-2.03,3.14-3.96,6.52-6.64,9.15,1.44-3.55,3.61-6.63,5.69-9.77,2.11-3.09,4.28-6.31,6.64-9.15h0Z" fill="#dcb56d"/>
+        <path d="M74.33,29.38c2.82-3.41,6.19-6.24,9.79-8.78-2.92,3.31-6.1,6.35-9.79,8.78h0Z" fill="#dcb56d"/>
+        <path d="M97.79,25.03c-3.3,1.84-6.68,3.51-10.09,5.1-3.41,1.52-6.87,3.32-10.56,4.06,3.14-2.19,6.64-3.6,10.09-5.1,3.45-1.44,7.03-2.96,10.56-4.06h0Z" fill="#dcb56d"/>
+        <path d="M78.81,39.59c4.22-1.32,8.59-1.86,12.99-2.03-4.25,1.18-8.57,2-12.99,2.03h0Z" fill="#dcb56d"/>
+        <path d="M36.52,6.74c2.33,2.98,4.51,6.05,6.61,9.17,2.04,3.13,4.35,6.27,5.66,9.79-2.66-2.76-4.59-6-6.61-9.17-1.96-3.19-4.02-6.48-5.66-9.79h0Z" fill="#dcb56d"/>
+        <path d="M53.88,23.2c-1.97-3.96-3.18-8.19-4.04-12.52,1.83,4.01,3.32,8.15,4.04,12.52h0Z" fill="#dcb56d"/>
+        <path d="M20.98,24.86c3.57,1.23,7.08,2.61,10.54,4.09,3.41,1.52,7.06,2.89,10.08,5.13-3.73-.87-7.12-2.53-10.54-4.09-3.38-1.61-6.9-3.24-10.08-5.13h0Z" fill="#dcb56d"/>
+        <path d="M44.5,29.22c-3.81-2.25-7.13-5.14-10.2-8.3,3.72,2.37,7.22,5.03,10.2,8.3h0Z" fill="#dcb56d"/>
+        <path d="M39.91,39.37c-4.42.19-8.77-.43-13.08-1.4,4.41-.04,8.79.28,13.08,1.4h0Z" fill="#dcb56d"/>
+      </g>
+      <path d="M75.52,60.98c-3.74,0-7.46-.29-11.36-.89-.01,0-.03,0-.04,0l-11.9-2.18c-.5-.09-1-.18-1.49-.28-3.79-.7-7.36-1.36-11.17-1.82-3.73-.45-7.4-.67-10.92-.67-3.9,0-7.76.28-11.47.83-4.08.61-7.94,1.53-12.03,2.52-1.15.28-2.33.56-3.53.84-.1.02-.2.03-.3.03-.56,0-1.07-.36-1.25-.91-.21-.65.11-1.36.74-1.62l7.6-3.25c6.52-2.78,12.84-6.23,19.32-10.54l2.85-1.9s.03-.02.05-.03c.42-.25.94-.4,1.43-.4.36,0,.69.08.98.22l8.09,4.1,9.61-7.42c.24-.18.52-.28.81-.28.18,0,.37.04.55.12l1.11.5,6.73-6.04c.37-.34.83-.51,1.3-.51s.95.18,1.36.53l9.27,7.74,2.16-.85c.16-.06.32-.09.48-.09.26,0,.52.08.74.23l9.81,6.67,5.55-2.87c.43-.22.87-.34,1.31-.34.52,0,1.02.16,1.48.47l5.61,3.8c5.42,3.68,11.29,6.29,15.8,8.15l4.41,1.82c.62.26.95.94.76,1.59-.17.57-.69.95-1.27.95-.07,0-.15,0-.22-.02-3.93-.67-7.75-.99-11.68-.99s-7.63.29-12.3.9l-9.79,1.29c-3.04.4-6.12.6-9.17.6Z" fill="#ece3d6"/>
+      <path d="M84.52,59.07c-6.84.9-13.44.75-20.16-.28l-11.9-2.18c-4.29-.79-8.39-1.58-12.74-2.1-7.6-.91-15.16-.96-22.73.16-5.32.79-10.28,2.12-15.66,3.38l7.6-3.25c6.89-2.94,13.31-6.52,19.53-10.66l2.85-1.9c.29-.17.8-.29,1.13-.13l8.83,4.48,10.27-7.93,1.89.86,7.37-6.62c.3-.27.63-.21.94.04l9.87,8.24,2.88-1.14,10.46,7.11,6.24-3.24c.5-.26.98-.26,1.44.05l5.61,3.8c5.02,3.4,10.43,5.96,16.03,8.28l4.41,1.82c-8.54-1.45-15.93-1.21-24.37-.1l-9.78,1.29Z" fill="#262e1e"/>
+      <g>
+        <path d="M75.63,50.51l1.66,3.31c-1.89-1.28-3.52-2.64-5.15-4.16l-5.33-4.96c.87,3.22,2.23,5.88,3.54,8.84-3.55-2.93-5.92-7.21-7.89-11.38l-7.17,4.91,5.35-9.07c0-1.09,0-2.18.58-3.09l11.77,10.8c1.37,1.13,2.59,2.24,4.24,3.16-1.23-2.17-2.33-4.12-2.44-6.55l14.51,10.81c-3.25-1.09-6.29-2.63-9.62-4.1,1.67,2.53,3.93,4.29,6.14,6.25-1.94-.43-3.63-1.19-5.38-2.01l-4.79-2.77Z" fill="#f4eeec"/>
+        <path d="M35.11,49.37l-3.49-2c-2.62,1.14-5.16,2.28-7.91,3.31l8.17-6.59,5.96,3.47-2.73,1.8Z" fill="#f4eeec"/>
+        <path d="M105.07,54.51c-3.65-.38-6.93-1.45-10.15-3.01-1.06-1.8-1.94-3.58-2.63-5.55l3.73,2.73c2.91,2.15,5.9,4.01,9.05,5.83Z" fill="#f4eeec"/>
+        <path d="M43.96,50.51c-1.18.57-2.47.74-3.91.89l7.78-5.44,2.35.97c-2.08,1.28-4.03,2.53-6.22,3.58Z" fill="#f4eeec"/>
+      </g>
+    </symbol>
+  </defs>
+</svg>
+
+<!-- NAV -->
+<header class="sticky top-0 z-50 bg-isabelline/90 backdrop-blur border-b border-taupe-soft" style="background:color-mix(in oklab, var(--isabelline) 92%, transparent); backdrop-filter:blur(8px)">
+  <div class="max-w-6xl mx-auto px-6 md:px-8 h-20 flex items-center justify-between">
+    <a href="#top" class="flex items-center gap-3 shrink-0" aria-label="Elora home">
+      <svg width="80" height="41" style="transform:translateY(-8px)"><use href="#elora-mark"/></svg>
+      <span class="font-display text-3xl" style="font-weight:500; letter-spacing:.08em">ELORA</span>
+    </a>
+    <nav class="hidden md:flex items-center gap-9">
+      <a href="#about" class="nav-link">About</a>
+      <a href="#approach" class="nav-link">Approach</a>
+      <a href="#areas-of-care" class="nav-link">Care</a>
+      <a href="#faq" class="nav-link">FAQs</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </nav>
+    <div class="flex items-center gap-4">
+      <a href="contact.html" class="btn btn-primary hidden sm:inline-flex">Contact us</a>
+      <button id="menu-toggle" class="md:hidden p-2 -mr-2" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
+        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="var(--pine)" stroke-width="1.6" stroke-linecap="round"><path d="M2 6h18M2 11h18M2 16h18"/></svg>
+      </button>
+    </div>
+  </div>
+  <div id="mobile-nav" class="mobile-menu md:hidden border-t border-taupe-soft">
+    <div class="max-w-6xl mx-auto px-6 py-5 flex flex-col gap-5">
+      <a href="#about" class="nav-link">About</a>
+      <a href="#approach" class="nav-link">Approach</a>
+      <a href="#areas-of-care" class="nav-link">Care</a>
+      <a href="#faq" class="nav-link">FAQs</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+      <a href="contact.html" class="btn btn-primary w-fit">Contact us</a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="relative overflow-hidden">
+    <div class="grain" style="background-image:url('data:image/svg+xml;utf8,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22200%22 height=%22200%22&gt;&lt;filter id=%22n%22&gt;&lt;feTurbulence type=%22fractalNoise%22 baseFrequency=%220.85%22 numOctaves=%222%22 stitchTiles=%22stitch%22/&gt;&lt;/filter&gt;&lt;rect width=%22100%25%22 height=%22100%25%22 filter=%22url(%23n)%22/&gt;&lt;/svg&gt;')"></div>
+
+    <div class="max-w-6xl mx-auto px-6 md:px-8 pt-14 pb-0 md:pt-16 md:pb-0 relative z-10">
+      <div class="max-w-3xl">
+        <h1 class="font-display hero-in d1" style="font-weight:500; font-size:clamp(2.5rem,4.6vw,3.75rem); line-height:1.1;">
+          Your care should be built around you.
+        </h1>
+        <p class="mt-4 text-coin hero-in d2" style="font-size:19px; max-width:58ch; line-height:1.65;">
+          Elora Behavioral Health is a psychiatric practice that combines evidence based clinical guidelines along with compassionate care to meet your mental health needs.        </p>
+        <div class="mt-6 flex flex-wrap items-center gap-x-8 gap-y-4 hero-in d3">
+          <a href="contact.html" class="btn btn-primary">Contact us</a>
+        </div>
+      </div>
+    </div>
+
+    <img class="hero-base" src="brand_assets/Hero base new.svg" alt="" aria-hidden="true">
+    <div class="hero-base-fade" aria-hidden="true"></div>
+  </section>
+
+  <!-- ABOUT / PROVIDER BIO -->
+  <section id="about" class="pt-4 pb-14 md:pt-6 md:pb-20" style="margin-top:clamp(-26px, -1.8vw, -14px)">
+    <div class="max-w-6xl mx-auto px-6 md:px-8">
+      <div class="grid md:grid-cols-[minmax(0,300px)_1fr] gap-12 md:gap-16">
+        <div>
+          <div class="card overflow-hidden">
+            <img src="brand_assets/headshot.jpeg" alt="Portrait of Suzanne Perakathu, APRN, PMHNP-BC" class="block w-full h-auto" style="aspect-ratio:4/5; object-fit:cover; object-position:60% 50%;">
+          </div>
+          <p class="mt-5 font-display" style="font-weight:500; font-size:1.1rem">Suzanne Perakathu, APRN, PMHNP-BC</p>
+          <p class="mt-1 text-coin text-sm">Board-certified Psychiatric Mental Health Nurse Practitioner</p>
+        </div>
+        <div>
+          <h2 class="font-display" style="font-weight:500; font-size:clamp(1.9rem,3.2vw,2.6rem); line-height:1.15">Welcome! I'm Suzanne Perakathu, APRN, PMHNP-BC.</h2>
+          <div class="mt-5 space-y-5 text-coin" style="font-size:17px; max-width:64ch">
+            <p>As a board-certified Psychiatric Mental Health Nurse Practitioner with over 8 years of clinical experience, I am passionate about helping you find hope and receive medical care that is built around your needs. My clinical training and experience are focused on psychiatric evaluation and medication management rather than providing ongoing psychotherapy.</p>
+            <p>I provide comprehensive psychiatric evaluations, medication management, and treatment for children (ages 12 and up), adolescents, and adults experiencing anxiety, depression, ADHD, and other psychiatric conditions. I collaborate closely with each patient to develop an individualized treatment plan that utilizes thoughtful use of psychiatric medications.</p>
+            <p>I work in collaboration with psychiatrist Dr. Michael Hernandez when appropriate, as part of maintaining safe, high-quality psychiatric care.</p>
+            <p>My Christian faith inspires the way I care for others. I believe every person is created with inherent worth and deserves to be treated with dignity, compassion, and respect. While I warmly welcome people of all faiths, backgrounds, and beliefs, my commitment is to create a caring environment that is mindful and respectful of each patient's individual beliefs and views.</p>
+                     </div>
+          <a href="contact.html" class="btn btn-primary mt-7">Contact us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AREAS OF CARE -->
+  <section id="areas-of-care" class="pt-8 pb-8 md:pt-10 md:pb-10 border-t border-taupe-soft bg-sand">
+    <div class="max-w-6xl mx-auto px-6 md:px-8">
+      <div class="max-w-xl">
+        <h2 class="font-display" style="font-weight:500; font-size:clamp(1.9rem,3.2vw,2.6rem)">What you might need care for.</h2>
+      </div>
+
+      <p class="mt-6 font-display" style="font-weight:500; font-size:1.3rem; line-height:1.7; max-width:48rem;">Medication management &middot; Anxiety &middot; Depression &middot; ADHD &middot; Focus &middot; Trauma &middot; Stress &middot; Sleep</p>
+    </div>
+  </section>
+
+  <!-- APPROACH -->
+  <section id="approach" class="pt-8 pb-14 md:pt-12 md:pb-20 border-t border-taupe-soft">
+    <div class="max-w-6xl mx-auto px-6 md:px-8">
+      <div class="max-w-xl">
+        <h2 class="font-display" style="font-weight:500; font-size:clamp(1.9rem,3.2vw,2.6rem)">What to expect from care here.</h2>
+        <p class="mt-4 text-coin" style="font-size:17px">A clear scope keeps care safe and steady. Here's what this practice is built for, and what it isn't.</p>
+      </div>
+
+      <div class="mt-8 grid md:grid-cols-2 gap-6">
+        <div class="card p-8">
+          <h3 class="font-display" style="font-weight:500; font-size:1.3rem">What this practice is</h3>
+          <ul class="mt-5 space-y-4">
+            <li class="flex items-start gap-3">
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="var(--pine)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" class="mt-0.5 shrink-0" aria-hidden="true"><path d="M3.5 9.5l3.5 3.5 7.5-8.5"/></svg>
+              <span class="text-coin">Outpatient psychiatric care for ages 12–65</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="var(--pine)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" class="mt-0.5 shrink-0" aria-hidden="true"><path d="M3.5 9.5l3.5 3.5 7.5-8.5"/></svg>
+              <span class="text-coin">Collaborative and relational</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="var(--pine)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" class="mt-0.5 shrink-0" aria-hidden="true"><path d="M3.5 9.5l3.5 3.5 7.5-8.5"/></svg>
+              <span class="text-coin">Structured and continuity-focused</span>
+            </li>
+          </ul>
+        </div>
+        <div class="card p-8">
+          <h3 class="font-display" style="font-weight:500; font-size:1.3rem">What this practice is not</h3>
+          <ul class="mt-5 space-y-4">
+            <li class="flex items-start gap-3">
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="var(--coin)" stroke-width="1.6" stroke-linecap="round" class="mt-0.5 shrink-0" aria-hidden="true"><path d="M4.5 4.5l9 9M13.5 4.5l-9 9"/></svg>
+              <span class="text-coin">Not a crisis or emergency service</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="var(--coin)" stroke-width="1.6" stroke-linecap="round" class="mt-0.5 shrink-0" aria-hidden="true"><path d="M4.5 4.5l9 9M13.5 4.5l-9 9"/></svg>
+              <span class="text-coin">Not designed for rushed, high-volume care</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="var(--coin)" stroke-width="1.6" stroke-linecap="round" class="mt-0.5 shrink-0" aria-hidden="true"><path d="M4.5 4.5l9 9M13.5 4.5l-9 9"/></svg>
+              <span class="text-coin">Not a substitute for inpatient or urgent care settings</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="mt-6 text-center" style="font-weight:700; font-size:1rem; max-width:75%; margin-left:auto; margin-right:auto;">If you're in crisis or it's an emergency, call 911, go to the nearest emergency room, or call/text 988.</p>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="pt-8 pb-14 md:pt-12 md:pb-20 border-t border-taupe-soft">
+    <div class="max-w-3xl mx-auto px-6 md:px-8">
+      <div >
+        <h2 class="font-display" style="font-weight:500; font-size:clamp(1.9rem,3.2vw,2.6rem)">Common questions.</h2>
+      </div>
+
+      <div class="mt-8">
+        <details class="faq faq-item py-6" open>
+          <summary class="flex items-center justify-between gap-4">
+            <span class="font-display" style="font-weight:500; font-size:1.15rem">Do you accept insurance?</span>
+            <svg class="chev shrink-0" width="18" height="18" viewBox="0 0 18 18" stroke="var(--sun)" stroke-width="1.6" fill="none"><path d="M9 2v14M2 9h14" stroke-linecap="round"/></svg>
+          </summary>
+          <p class="mt-4 text-coin">We work with several major insurers and offer self-pay options. Our team will confirm your coverage before your first session, so there are no surprises.</p>
+        </details>
+        <details class="faq faq-item py-6">
+          <summary class="flex items-center justify-between gap-4">
+            <span class="font-display" style="font-weight:500; font-size:1.15rem">What ages do you treat?</span>
+            <svg class="chev shrink-0" width="18" height="18" viewBox="0 0 18 18" stroke="var(--sun)" stroke-width="1.6" fill="none"><path d="M9 2v14M2 9h14" stroke-linecap="round"/></svg>
+          </summary>
+          <p class="mt-4 text-coin">We treat children ages 12 and up, adolescents, and adults for anxiety, depression, ADHD, and other mental health conditions.</p>
+        </details>
+        <details class="faq faq-item py-6">
+          <summary class="flex items-center justify-between gap-4">
+            <span class="font-display" style="font-weight:500; font-size:1.15rem">Is this telehealth or in-person?</span>
+            <svg class="chev shrink-0" width="18" height="18" viewBox="0 0 18 18" stroke="var(--sun)" stroke-width="1.6" fill="none"><path d="M9 2v14M2 9h14" stroke-linecap="round"/></svg>
+          </summary>
+          <p class="mt-4 text-coin">Both. Choose whichever feels more comfortable, and change your mind whenever you need to.</p>
+        </details>
+        <details class="faq faq-item py-6">
+          <summary class="flex items-center justify-between gap-4">
+            <span class="font-display" style="font-weight:500; font-size:1.15rem">Where can I access telehealth visits from?</span>
+            <svg class="chev shrink-0" width="18" height="18" viewBox="0 0 18 18" stroke="var(--sun)" stroke-width="1.6" fill="none"><path d="M9 2v14M2 9h14" stroke-linecap="round"/></svg>
+          </summary>
+          <p class="mt-4 text-coin">Telehealth visits are available only when the patient is physically located in Texas at the time of the visit.</p>
+        </details>
+        <details class="faq faq-item py-6">
+          <summary class="flex items-center justify-between gap-4">
+            <span class="font-display" style="font-weight:500; font-size:1.15rem">Do you provide emergency or crisis care?</span>
+            <svg class="chev shrink-0" width="18" height="18" viewBox="0 0 18 18" stroke="var(--sun)" stroke-width="1.6" fill="none"><path d="M9 2v14M2 9h14" stroke-linecap="round"/></svg>
+          </summary>
+          <p class="mt-4 text-coin">This practice does not provide emergency or crisis care.</p>
+        </details>
+        <details class="faq faq-item py-6">
+          <summary class="flex items-center justify-between gap-4">
+            <span class="font-display" style="font-weight:500; font-size:1.15rem">Are you a psychiatrist?</span>
+            <svg class="chev shrink-0" width="18" height="18" viewBox="0 0 18 18" stroke="var(--sun)" stroke-width="1.6" fill="none"><path d="M9 2v14M2 9h14" stroke-linecap="round"/></svg>
+          </summary>
+          <div class="mt-4 space-y-3 text-coin">
+            <p>No. A psychiatrist is a physician (MD or DO). I am a Psychiatric Mental Health Nurse Practitioner (PMHNP-BC), an advanced practice registered nurse with graduate-level education and specialized training in psychiatric and mental health care. I am licensed as an APRN and board certified in Texas.</p>
+            <p>As a PMHNP-BC, I provide many of the same outpatient psychiatric services as psychiatrists, including psychiatric evaluations, diagnosis and treatment of mental health conditions, and medication management.</p>
+            <p>I collaborate with psychiatrist Dr. Michael Hernandez when appropriate, as part of maintaining safe, high-quality psychiatric care.</p>
+          </div>
+        </details>
+        <details class="faq faq-item py-6">
+          <summary class="flex items-center justify-between gap-4">
+            <span class="font-display" style="font-weight:500; font-size:1.15rem">Are you a therapist or counselor?</span>
+            <svg class="chev shrink-0" width="18" height="18" viewBox="0 0 18 18" stroke="var(--sun)" stroke-width="1.6" fill="none"><path d="M9 2v14M2 9h14" stroke-linecap="round"/></svg>
+          </summary>
+          <p class="mt-4 text-coin">No. While my training includes psychotherapy, my primary focus is psychiatric evaluation and medication management. I may recommend working with a therapist or counselor for more specialized psychotherapy alongside the psychiatric care I provide.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section id="cta" class="relative overflow-hidden bg-pine">
+    <svg class="mark-glow" style="bottom:-10%; left:-8%; width:min(50vw,720px); height:auto; opacity:.22" viewBox="-1 -1 122.03 62.98" aria-hidden="true"><use href="#elora-mark"/></svg>
+    <div class="max-w-3xl mx-auto px-6 md:px-8 pt-8 pb-14 md:pt-12 md:pb-20 text-center relative z-10">
+      <h2 class="font-display text-isabelline" style="font-weight:500; font-size:clamp(2.1rem,4.2vw,3.2rem)">Ready for care built around you?</h2>
+      <a href="contact.html" class="btn btn-inverted mt-7">Contact us</a>
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer id="contact" class="border-t border-taupe-soft">
+  <div class="max-w-6xl mx-auto px-6 md:px-8 py-12">
+    <div class="grid md:grid-cols-[1.4fr_1fr_1fr] gap-12">
+      <div>
+        <a href="#top" class="flex items-center gap-3" aria-label="Elora home">
+          <svg width="66" height="34"><use href="#elora-mark"/></svg>
+          <span>
+            <span class="font-display text-2xl block" style="font-weight:500; letter-spacing:.08em; line-height:1">ELORA</span>
+            <span class="block text-coin" style="font-size:11px; font-weight:600; letter-spacing:.22em">BEHAVIORAL HEALTH</span>
+          </span>
+        </a>
+        <p class="mt-4 text-coin max-w-xs" style="font-size:14.5px">Psychiatric care led by Suzanne Perakathu, APRN, PMHNP-BC</p>
+      </div>
+      <div>
+        <ul class="space-y-3 text-sm">
+          <li><a href="#about" class="link-underline">About</a></li>
+          <li><a href="#approach" class="link-underline">Approach</a></li>
+          <li><a href="#areas-of-care" class="link-underline">Care</a></li>
+          <li><a href="#faq" class="link-underline">FAQs</a></li>
+        </ul>
+      </div>
+      <div>
+        <ul class="space-y-3 text-sm text-coin">
+          <li>suzanne@elorabh.com</li>
+          <li>(956) 625-0742</li>
+          <li>Telehealth &amp; in-person</li>
+        </ul>
+      </div>
+    </div>
+    <div class="mt-10 pt-6 border-t border-taupe-soft text-xs text-coin">
+      <span>© 2026 Elora Behavioral Health. All rights reserved.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  (function(){
+    var toggle = document.getElementById('menu-toggle');
+    var menu = document.getElementById('mobile-nav');
+    toggle.addEventListener('click', function(){
+      var open = menu.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    menu.querySelectorAll('a').forEach(function(a){
+      a.addEventListener('click', function(){
+        menu.classList.remove('open');
+        toggle.setAttribute('aria-expanded', 'false');
+      });
+    });
+  })();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,123 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-07-21T00:00:00.000Z",
+  "title": "Design System: Elora",
+  "extensions": {
+    "colorMeta": {
+      "isabelline": { "role": "neutral", "displayName": "Isabelline", "canonical": "#F4EEEB", "tonalRamp": ["color-mix(in oklch, #F4EEEB 15%, black)", "color-mix(in oklch, #F4EEEB 30%, black)", "color-mix(in oklch, #F4EEEB 50%, black)", "color-mix(in oklch, #F4EEEB 70%, black)", "#F4EEEB", "color-mix(in oklch, #F4EEEB 85%, white)", "color-mix(in oklch, #F4EEEB 92%, white)", "color-mix(in oklch, #F4EEEB 97%, white)"] },
+      "card-white": { "role": "neutral", "displayName": "Card White", "canonical": "#FBF9F7", "tonalRamp": ["color-mix(in oklch, #FBF9F7 15%, black)", "color-mix(in oklch, #FBF9F7 30%, black)", "color-mix(in oklch, #FBF9F7 50%, black)", "color-mix(in oklch, #FBF9F7 70%, black)", "#FBF9F7", "color-mix(in oklch, #FBF9F7 85%, white)", "color-mix(in oklch, #FBF9F7 92%, white)", "color-mix(in oklch, #FBF9F7 97%, white)"] },
+      "pine": { "role": "primary", "displayName": "Pine Tree", "canonical": "#292E1E", "tonalRamp": ["color-mix(in oklch, #292E1E 85%, black)", "color-mix(in oklch, #292E1E 60%, black)", "color-mix(in oklch, #292E1E 30%, black)", "#292E1E", "color-mix(in oklch, #292E1E 80%, white)", "color-mix(in oklch, #292E1E 60%, white)", "color-mix(in oklch, #292E1E 40%, white)", "color-mix(in oklch, #292E1E 20%, white)"] },
+      "vintage-coin": { "role": "neutral", "displayName": "Vintage Coin", "canonical": "#7A6B5E", "tonalRamp": ["color-mix(in oklch, #7A6B5E 70%, black)", "color-mix(in oklch, #7A6B5E 40%, black)", "color-mix(in oklch, #7A6B5E 15%, black)", "#7A6B5E", "color-mix(in oklch, #7A6B5E 80%, white)", "color-mix(in oklch, #7A6B5E 60%, white)", "color-mix(in oklch, #7A6B5E 40%, white)", "color-mix(in oklch, #7A6B5E 20%, white)"] },
+      "taupe": { "role": "neutral", "displayName": "Taupe", "canonical": "#B3A696", "tonalRamp": ["color-mix(in oklch, #B3A696 70%, black)", "color-mix(in oklch, #B3A696 40%, black)", "color-mix(in oklch, #B3A696 15%, black)", "#B3A696", "color-mix(in oklch, #B3A696 80%, white)", "color-mix(in oklch, #B3A696 60%, white)", "color-mix(in oklch, #B3A696 40%, white)", "color-mix(in oklch, #B3A696 20%, white)"] },
+      "southern-sand": { "role": "neutral", "displayName": "Southern Sand", "canonical": "#EDE3D6", "tonalRamp": ["color-mix(in oklch, #EDE3D6 30%, black)", "color-mix(in oklch, #EDE3D6 50%, black)", "color-mix(in oklch, #EDE3D6 70%, black)", "#EDE3D6", "color-mix(in oklch, #EDE3D6 85%, white)", "color-mix(in oklch, #EDE3D6 92%, white)", "color-mix(in oklch, #EDE3D6 96%, white)", "color-mix(in oklch, #EDE3D6 99%, white)"] },
+      "warm-sun": { "role": "primary", "displayName": "Warm Sun", "canonical": "#B5842E", "tonalRamp": ["color-mix(in oklch, #B5842E 70%, black)", "color-mix(in oklch, #B5842E 40%, black)", "color-mix(in oklch, #B5842E 15%, black)", "#B5842E", "color-mix(in oklch, #B5842E 80%, white)", "color-mix(in oklch, #B5842E 60%, white)", "color-mix(in oklch, #B5842E 40%, white)", "color-mix(in oklch, #B5842E 20%, white)"] },
+      "warm-sun-soft": { "role": "primary", "displayName": "Warm Sun Soft", "canonical": "#D9B878", "tonalRamp": ["color-mix(in oklch, #D9B878 70%, black)", "color-mix(in oklch, #D9B878 40%, black)", "color-mix(in oklch, #D9B878 15%, black)", "#D9B878", "color-mix(in oklch, #D9B878 80%, white)", "color-mix(in oklch, #D9B878 60%, white)", "color-mix(in oklch, #D9B878 40%, white)", "color-mix(in oklch, #D9B878 20%, white)"] },
+      "success": { "role": "neutral", "displayName": "Muted Moss (Success)", "canonical": "#5A6B44" },
+      "warning": { "role": "neutral", "displayName": "Ochre (Warning)", "canonical": "#A5793C" },
+      "error": { "role": "neutral", "displayName": "Muted Clay (Error)", "canonical": "#8C4F3F" },
+      "info": { "role": "neutral", "displayName": "Slate Sage (Info)", "canonical": "#5E6B66" }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "Hero headline only." },
+      "headline": { "displayName": "Headline", "purpose": "Section headings." },
+      "body-lg": { "displayName": "Body Large", "purpose": "Hero subhead and section intros." },
+      "body": { "displayName": "Body", "purpose": "Standard paragraph copy." },
+      "label": { "displayName": "Label", "purpose": "Eyebrows and step numbers, always in Warm Sun, uppercase." }
+    },
+    "shadows": [
+      { "name": "button-resting", "value": "0 1px 2px rgba(41,46,30,.15), 0 8px 20px -8px rgba(41,46,30,.45)", "purpose": "Pine-tinted shadow under primary/inverted buttons at rest." },
+      { "name": "button-hover", "value": "0 2px 4px rgba(41,46,30,.18), 0 14px 28px -10px rgba(41,46,30,.55)", "purpose": "Deeper shadow paired with a 2px lift on hover." }
+    ],
+    "motion": [
+      { "name": "ease-settle", "value": "cubic-bezier(.25,.6,.3,1)", "purpose": "Default easing for all transitions and entrance animation; settles, never bounces." },
+      { "name": "duration-fast", "value": "140ms", "purpose": "Nav link color changes." },
+      { "name": "duration-standard", "value": "240ms", "purpose": "Button transforms, link underlines, FAQ chevrons." },
+      { "name": "duration-slow", "value": "340ms", "purpose": "Mobile menu expand/collapse." },
+      { "name": "duration-hero", "value": "640ms", "purpose": "Hero fade-rise entrance." }
+    ],
+    "breakpoints": [
+      { "name": "sm", "value": "640px" },
+      { "name": "md", "value": "768px" },
+      { "name": "lg", "value": "1024px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Main call-to-action, e.g. \"Book a session.\"",
+      "html": "<a href=\"#\" class=\"ds-btn-primary\">Book a session</a>",
+      "css": ".ds-btn-primary { display: inline-flex; align-items: center; gap: 0.5rem; font-family: 'Karla', sans-serif; font-weight: 600; font-size: 15px; padding: 0.85rem 1.75rem; border-radius: 999px; background: #292E1E; color: #F4EEEB; text-decoration: none; box-shadow: 0 1px 2px rgba(41,46,30,.15), 0 8px 20px -8px rgba(41,46,30,.45); transition: transform 240ms cubic-bezier(.25,.6,.3,1), box-shadow 240ms cubic-bezier(.25,.6,.3,1); } .ds-btn-primary:hover { transform: translateY(-2px); box-shadow: 0 2px 4px rgba(41,46,30,.18), 0 14px 28px -10px rgba(41,46,30,.55); } .ds-btn-primary:focus-visible { outline: 2px solid #B5842E; outline-offset: 3px; border-radius: 4px; }"
+    },
+    {
+      "name": "Inverted Button",
+      "kind": "button",
+      "refersTo": "button-inverted",
+      "description": "Used on dark (pine) backgrounds, e.g. the final CTA section.",
+      "html": "<a href=\"#\" class=\"ds-btn-inverted\">Book your first session</a>",
+      "css": ".ds-btn-inverted { display: inline-flex; align-items: center; gap: 0.5rem; font-family: 'Karla', sans-serif; font-weight: 600; font-size: 15px; padding: 0.85rem 1.75rem; border-radius: 999px; background: #F4EEEB; color: #292E1E; text-decoration: none; box-shadow: 0 1px 2px rgba(0,0,0,.1), 0 8px 20px -8px rgba(0,0,0,.35); transition: transform 240ms cubic-bezier(.25,.6,.3,1), box-shadow 240ms cubic-bezier(.25,.6,.3,1); } .ds-btn-inverted:hover { transform: translateY(-2px); box-shadow: 0 2px 4px rgba(0,0,0,.12), 0 14px 28px -10px rgba(0,0,0,.4); }"
+    },
+    {
+      "name": "Card",
+      "kind": "card",
+      "refersTo": "card",
+      "description": "Flat, bordered content card used in the areas-of-care and why-Elora grids.",
+      "html": "<div class=\"ds-card\"><h4 class=\"ds-card-title\">Anxiety</h4><p class=\"ds-card-body\">Racing thoughts, tension, worry that doesn't let up.</p></div>",
+      "css": ".ds-card { background: #FBF9F7; border: 1px solid color-mix(in oklab, #B3A696 35%, transparent); border-radius: 16px; padding: 1.75rem; } .ds-card-title { font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: 1.25rem; color: #292E1E; margin: 0 0 0.5rem; } .ds-card-body { font-family: 'Karla', sans-serif; font-size: 14px; color: #7A6B5E; margin: 0; }"
+    },
+    {
+      "name": "Nav Link",
+      "kind": "nav",
+      "refersTo": "nav-link",
+      "description": "Header navigation item.",
+      "html": "<a href=\"#\" class=\"ds-nav-link\">Approach</a>",
+      "css": ".ds-nav-link { color: #7A6B5E; font-family: 'Karla', sans-serif; font-weight: 500; font-size: 14.5px; text-decoration: none; transition: color 140ms cubic-bezier(.25,.6,.3,1); } .ds-nav-link:hover { color: #292E1E; }"
+    },
+    {
+      "name": "Underlined Link",
+      "kind": "custom",
+      "refersTo": "link-underline",
+      "description": "Inline text link with a sweep-in underline on hover.",
+      "html": "<a href=\"#\" class=\"ds-link-underline\">See how it works</a>",
+      "css": ".ds-link-underline { position: relative; color: #292E1E; font-family: 'Karla', sans-serif; font-weight: 600; font-size: 14px; text-decoration: none; } .ds-link-underline::after { content: ''; position: absolute; left: 0; right: 100%; bottom: -2px; height: 1.5px; background: #B5842E; transition: right 240ms cubic-bezier(.25,.6,.3,1); } .ds-link-underline:hover::after { right: 0; }"
+    },
+    {
+      "name": "Eyebrow Label",
+      "kind": "custom",
+      "refersTo": "label",
+      "description": "Small uppercase kicker above section headings.",
+      "html": "<p class=\"ds-eyebrow\">Areas of care</p>",
+      "css": ".ds-eyebrow { font-family: 'Karla', sans-serif; font-weight: 700; font-size: 11px; letter-spacing: 0.24em; text-transform: uppercase; color: #B5842E; margin: 0; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "Hope Through Strength",
+    "overview": "Elora's system carries the brand's meaning — light and sun-ray, steady ground — as a feeling, never a statement. Every surface stays warm and grounded rather than clinical: cream and pine do the structural work, and a single gold accent appears only where it earns its place (an eyebrow label, a focus ring, a chevron). The system explicitly rejects anything overtly religious or floral, anything feminine-coded or sterile, and anything that reads as generic telehealth-startup gloss — no stock-photo hero, no app-download push, no cold institutional forms. Components feel warm and tactile: soft pill buttons with a settling lift on hover, flat bordered cards rather than heavy shadows, and motion that never rushes — fades and short rises only, always with a reduced-motion fallback.",
+    "keyCharacteristics": [
+      "Warm neutral base (isabelline cream) with a single deep pine for text and primary actions",
+      "One gold accent (Warm Sun) used sparingly — eyebrows, focus rings, chevrons — never as a base color",
+      "Serif display (Cormorant Garamond) paired with a humanist sans (Karla) for warmth without sentimentality",
+      "Flat, bordered cards; shadow reserved for interactive elements only",
+      "Full-pill buttons, gentle settling motion, no bounce"
+    ],
+    "rules": [
+      { "name": "The One Accent Rule", "body": "Warm Sun appears on labels, focus states, and small interactive marks only — never as a background fill or a large surface. If gold is covering more than a chevron or an underline, it's being overused.", "section": "colors" },
+      { "name": "The Sentence-Case Rule", "body": "Everything outside the uppercase label role — headings, buttons, nav — stays sentence case. No title case, no all-caps body copy.", "section": "typography" },
+      { "name": "The Flat-Card Rule", "body": "Cards never carry a shadow. A hairline border is the only separation a static surface gets; shadows are earned only by things the visitor can press.", "section": "elevation" }
+    ],
+    "dos": [
+      "Do keep Warm Sun rare — labels, focus rings, chevrons, hover underlines only.",
+      "Do keep cards flat with a hairline border; reserve shadow for buttons and other pressable elements.",
+      "Do keep motion small and settling — fades and short rises at 140–420ms, cubic-bezier(.25,.6,.3,1), and always provide a prefers-reduced-motion fallback.",
+      "Do keep all copy in sentence case, including headings and buttons."
+    ],
+    "donts": [
+      "Don't use religious or floral imagery — the light/growth motifs stay abstract (sun-ray, plant-vine), never literal or devotional.",
+      "Don't design anything that reads as feminine-coded or sterile/institutional — the brand is deliberately androgynous and warm, welcoming without assumptions.",
+      "Don't reach for generic telehealth-startup gloss (stock photography, app-download-first layouts, urgency banners) — Elora stays editorial and unhurried instead.",
+      "Don't use bounce or elastic easing anywhere; motion only settles, never overshoots.",
+      "Don't let Warm Sun cover a large surface — it is an accent, never a fill."
+    ]
+  }
+}
