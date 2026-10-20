@@ -17,8 +17,7 @@ If you want to delete a line/section entirely, just delete the text after the la
 Elora Behavioral Health · Psychiatric care built around you
 
 [Search result description]
-Elora Behavioral Health is a psychiatric practice led by Suzanne Perakathu, APRN, PMHNP-BC, built on hope and steady ground. Reach out to get started. It's a conversation, not an assessment.
-(Note: this one still hasn't been updated since you trimmed it last time — let me know what you'd like it to say, or leave as-is.)
+Elora Behavioral Health is a psychiatric practice led by Suzanne Perakathu, APRN, PMHNP-BC. We provide compassionate personalized care, combined with the latest evidence based clinical guidelines, to meet your mental health needs.
 
 ### Header
 [Nav links]
@@ -57,17 +56,17 @@ I provide comprehensive psychiatric evaluations, medication management, and trea
 I work in collaboration with psychiatrist Dr. Michael Hernandez when appropriate, as part of maintaining safe, high-quality psychiatric care.
 
 [Paragraph 4]
-My Christian faith inspires the way I care for others. I believe every person is created with inherent worth and deserves to be treated with dignity, compassion, and respect. While I warmly welcome people of all faiths, backgrounds, and beliefs, my commitment is to create a caring environment that is mindful and respectful of each patient's individual beliefs and views.
+My Christian faith inspires the way I care for others. I believe every person is created with inherent worth and deserves to be treated with dignity, compassion, and respect. While I warmly welcome people of all faiths, backgrounds, and beliefs, my commitment is to create a caring environment and provide medical care that is mindful and respectful of each patient's individual beliefs and views.
 
 [Button]
 Contact us
 
 ### Areas of care ("What we help with")
 [Section headline]
-What you might need care for.
+Areas of care:
 
 [Condition list — one line, separated by ·]
-Medication management · Anxiety · Depression · ADHD · Focus · Trauma · Stress · Sleep
+Medication management for Anxiety, Depression, ADHD, and other psychiatric conditions.
 
 ### Approach ("What to expect from care here")
 [Section headline]
@@ -76,32 +75,32 @@ What to expect from care here.
 [Section intro]
 A clear scope keeps care safe and steady. Here's what this practice is built for, and what it isn't.
 
-[Card: "What this practice is" — title]
-What this practice is
+[Card: "What this practice offers" — title]
+This practice provides:
 
-[Card: "What this practice is" — bullet 1]
+[Card: "What this practice offers" — bullet 1]
 Outpatient psychiatric care for ages 12–65
 
-[Card: "What this practice is" — bullet 2]
-Collaborative and relational
+[Card: "What this practice offers" — bullet 2]
+Collaborative care
 
-[Card: "What this practice is" — bullet 3]
-Structured and continuity-focused
+[Card: "What this practice offers" — bullet 3]
+Structured and continuity-focused care
 
-[Card: "What this practice is not" — title]
-What this practice is not
+[Card: "What this practice does not offer" — title]
+This practice does not provide:
 
-[Card: "What this practice is not" — bullet 1]
-Not a crisis or emergency service
+[Card: "What this practice does not offer" — bullet 1]
+Crisis or emergency service
 
-[Card: "What this practice is not" — bullet 2]
-Not designed for rushed, high-volume care
+[Card: "What this practice does not offer" — bullet 2]
+Rushed, high-volume care
 
-[Card: "What this practice is not" — bullet 3]
-Not a substitute for inpatient or urgent care settings
+[Card: "What this practice does not offer" — bullet 3]
+A substitute for inpatient or urgent care
 
 [Crisis line]
-If you're in crisis or it's an emergency, call 911, go to the nearest emergency room, or call/text 988.
+If you're in crisis or in an emergency situation, please call 911 and go to the nearest emergency room, or call/text 988.
 
 ### FAQ ("Common questions")
 [Section headline]
@@ -120,30 +119,25 @@ We treat children ages 12 and up, adolescents, and adults for anxiety, depressio
 [Q3]
 Is this telehealth or in-person?
 [A3]
-Both. Choose whichever feels more comfortable, and change your mind whenever you need to.
+We offer both options. Telehealth services require the patient to be physically located in the state of Texas at the time of their visit.
 
 [Q4]
-Where can I access telehealth visits from?
+Do you provide emergency or crisis care?
 [A4]
-Telehealth visits are available only when the patient is physically located in Texas at the time of the visit.
+No, this practice does not provide emergency or crisis care.
 
 [Q5]
-Do you provide emergency or crisis care?
-[A5]
-This practice does not provide emergency or crisis care.
-
-[Q6]
 Are you a psychiatrist?
-[A6 — paragraph 1]
+[A5 — paragraph 1]
 No. A psychiatrist is a physician (MD or DO). I am a Psychiatric Mental Health Nurse Practitioner (PMHNP-BC), an advanced practice registered nurse with graduate-level education and specialized training in psychiatric and mental health care. I am licensed as an APRN and board certified in Texas.
-[A6 — paragraph 2]
+[A5 — paragraph 2]
 As a PMHNP-BC, I provide many of the same outpatient psychiatric services as psychiatrists, including psychiatric evaluations, diagnosis and treatment of mental health conditions, and medication management.
-[A6 — paragraph 3]
+[A5 — paragraph 3]
 I collaborate with psychiatrist Dr. Michael Hernandez when appropriate, as part of maintaining safe, high-quality psychiatric care.
 
-[Q7]
+[Q6]
 Are you a therapist or counselor?
-[A7]
+[A6]
 No. While my training includes psychotherapy, my primary focus is psychiatric evaluation and medication management. I may recommend working with a therapist or counselor for more specialized psychotherapy alongside the psychiatric care I provide.
 
 ### Final banner
@@ -161,9 +155,10 @@ Psychiatric care led by Suzanne Perakathu, APRN, PMHNP-BC
 About / Approach / Care / FAQs
 
 [Footer contact column]
-suzanne@elorabh.com
+info@elorabh.com
+Please note that by contacting us via email, you acknowledge that it is not a secure form of communication.
 (956) 625-0742
-Telehealth & in-person
+Telehealth & in-person visits available. *Telehealth services require the patient to be physically located in the state of Texas at the time of their visit.
 
 [Copyright line]
 © 2026 Elora Behavioral Health. All rights reserved.
@@ -191,7 +186,8 @@ Have a question, or ready to get started? Reach out by phone or email and our te
 Hours: Monday–Thursday, 9am–4pm
 
 [Contact card — email]
-suzanne@elorabh.com
+info@elorabh.com
+Please note that by contacting us via email, you acknowledge that it is not a secure form of communication.
 
 [Contact card — address 1]
 315 E Jackson Ave Suite 16, Harlingen, TX 78550
@@ -203,9 +199,9 @@ In-person office
 
 [Contact card — telehealth]
 Telehealth
-Available only when you're physically located in Texas
+Available when the patient is physically located in the state of Texas at the time of their visit.
 
 [Crisis line]
-If you're in crisis or it's an emergency, call 911, go to the nearest emergency room, or call/text 988.
+If you're in crisis or in an emergency situation, please call 911 and go to the nearest emergency room, or call/text 988.
 
 (Footer is the same as the Home page footer above.)
