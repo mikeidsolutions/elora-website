@@ -1,0 +1,497 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Legal disclosures and patient rights · Elora Behavioral Health</title>
+<meta name="description" content="Legal disclosures and patient rights for Elora Behavioral Health: your rights and responsibilities, privacy, telehealth, emergency services, fees, and how to file a complaint.">
+<link rel="icon" type="image/png" href="brand_assets/Logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Karla:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+  :root{
+    --isabelline:#F4EEEB;
+    --card:#FBF9F7;
+    --pine:#292E1E;
+    --coin:#7A6B5E;
+    --taupe:#B3A696;
+    --sand:#EDE3D6;
+    --sun:#B5842E;
+    --sun-soft:#D9B878;
+    --ease:cubic-bezier(.25,.6,.3,1);
+  }
+
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+  body{
+    background:var(--isabelline);
+    color:var(--pine);
+    font-family:'Karla',sans-serif;
+    line-height:1.7;
+    -webkit-font-smoothing:antialiased;
+  }
+
+  .font-display{font-family:'Cormorant Garamond',serif}
+  .text-pine{color:var(--pine)}
+  .text-coin{color:var(--coin)}
+  .text-sun{color:var(--sun)}
+  .text-isabelline{color:var(--isabelline)}
+  .bg-isabelline{background:var(--isabelline)}
+  .bg-card{background:var(--card)}
+  .bg-sand{background:var(--sand)}
+  .bg-pine{background:var(--pine)}
+  .border-taupe{border-color:var(--taupe)}
+  .border-taupe-soft{border-color:color-mix(in oklab, var(--taupe) 45%, transparent)}
+
+  h1,h2,h3,.font-display{letter-spacing:-.02em}
+
+  .btn{
+    display:inline-flex;
+    align-items:center;
+    gap:.5rem;
+    font-family:'Karla',sans-serif;
+    font-weight:600;
+    font-size:15px;
+    padding:.85rem 1.75rem;
+    border-radius:999px;
+    transition:transform 240ms var(--ease), box-shadow 240ms var(--ease), background-color 240ms var(--ease);
+    white-space:nowrap;
+  }
+  .btn-primary{
+    background:var(--pine);
+    color:var(--isabelline);
+    box-shadow:0 1px 2px rgba(41,46,30,.15), 0 8px 20px -8px rgba(41,46,30,.45);
+  }
+  .btn-primary:hover{transform:translateY(-2px); box-shadow:0 2px 4px rgba(41,46,30,.18), 0 14px 28px -10px rgba(41,46,30,.55)}
+  .btn-primary:active{transform:translateY(0)}
+
+  a:focus-visible, button:focus-visible{
+    outline:2px solid var(--sun);
+    outline-offset:3px;
+    border-radius:4px;
+  }
+
+  .link-underline{
+    position:relative;
+    color:var(--pine);
+    font-weight:600;
+    text-decoration:none;
+  }
+  .link-underline::after{
+    content:'';
+    position:absolute;
+    left:0; right:100%; bottom:-2px;
+    height:1.5px;
+    background:var(--sun);
+    transition:right 240ms var(--ease);
+  }
+  .link-underline:hover::after{right:0}
+
+  .card{
+    background:var(--card);
+    border:1px solid color-mix(in oklab, var(--taupe) 35%, transparent);
+    border-radius:16px;
+  }
+
+  .nav-link{
+    color:var(--coin);
+    font-weight:500;
+    font-size:14.5px;
+    transition:color 140ms var(--ease);
+  }
+  .nav-link:hover{color:var(--pine)}
+
+  .mobile-menu{
+    max-height:0;
+    overflow:hidden;
+    transition:max-height 340ms var(--ease);
+  }
+  .mobile-menu.open{max-height:320px}
+
+  .contact-row{
+    display:flex;
+    align-items:center;
+    gap:.9rem;
+  }
+  .contact-row + .contact-row{
+    margin-top:1.1rem;
+    padding-top:1.1rem;
+    border-top:1px solid color-mix(in oklab, var(--taupe) 35%, transparent);
+  }
+  .contact-icon{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:40px;
+    height:40px;
+    border-radius:999px;
+    background:var(--sand);
+    flex-shrink:0;
+  }
+
+  /* legal page */
+  section[id]{scroll-margin-top:6.5rem}
+  .legal-doc section + section{margin-top:3rem}
+  .legal-doc h2{font-variant-numeric:lining-nums; font-family:'Cormorant Garamond',serif; font-weight:500; font-size:clamp(1.6rem,2.6vw,2rem); line-height:1.2; letter-spacing:-.02em}
+  .legal-doc h3{font-family:'Cormorant Garamond',serif; font-weight:500; font-size:1.3rem; line-height:1.3; margin-top:1.75rem; letter-spacing:-.01em}
+  .legal-doc p, .legal-doc li, .legal-doc address{font-size:16px; line-height:1.7; color:var(--coin); font-style:normal}
+  .legal-doc h2 + p, .legal-doc h3 + p{margin-top:.9rem}
+  .legal-doc p + p, .legal-doc p + ul, .legal-doc ul + p, .legal-doc p + address, .legal-doc address + p{margin-top:.9rem}
+  .legal-doc ul{list-style:none; padding:0}
+  .legal-doc ul li{position:relative; padding-left:1.25rem}
+  .legal-doc ul li + li{margin-top:.5rem}
+  .legal-doc ul li::before{content:''; position:absolute; left:0; top:.8em; width:6px; height:1.5px; background:var(--taupe)}
+  .legal-doc address{margin-top:.9rem}
+  .legal-doc .emergency{margin-top:1.25rem; padding:1.5rem 1.75rem}
+  .legal-doc .emergency p, .legal-doc .emergency li{color:var(--pine)}
+  .legal-doc .emergency ul{margin-top:.9rem}
+  .toc{padding:1rem 1.25rem}
+  .toc-summary{cursor:pointer; font-weight:600; font-size:15px; list-style:none}
+  .toc-summary::-webkit-details-marker{display:none}
+  .toc-list ol{list-style:none; padding:0; margin-top:.75rem; counter-reset:toc}
+  .toc-list li{counter-increment:toc}
+  .toc-list a{display:block; padding:.3rem 0; font-size:14.5px; line-height:1.4; color:var(--coin); transition:color 140ms var(--ease)}
+  .toc-list a:hover{color:var(--pine)}
+  @media (min-width:1024px){
+    .toc{padding:0}
+    .toc-list ol{margin-top:0; border-left:1px solid color-mix(in oklab, var(--taupe) 45%, transparent)}
+    .toc-list a{padding:.35rem 0 .35rem 1rem}
+  }
+</style>
+</head>
+<body class="bg-isabelline">
+
+<!-- shared SVG symbol: the Elora mark (sunrise over mountains), referenced in nav/footer -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="elora-mark" viewBox="-1 -1 122.03 62.98">
+      <path d="M76.57,42.02c0,9.51-7.64,8.22-17.15,8.22s-17.29,1.3-17.29-8.22,7.71-17.22,17.22-17.22,17.22,7.71,17.22,17.22Z" fill="#dcb56d"/>
+      <g>
+        <path d="M59.43,0c.33,3.76.49,7.53.55,11.29,0,3.74.23,7.63-.59,11.29-.72-3.76-.58-7.53-.55-11.29.09-3.74.15-7.62.59-11.29h0Z" fill="#dcb56d"/>
+        <path d="M65.02,23.26c.51-4.4,1.79-8.6,3.43-12.7-.65,4.36-1.66,8.64-3.43,12.7h0Z" fill="#dcb56d"/>
+        <path d="M82.32,6.84c-1.77,3.34-3.69,6.58-5.69,9.77-2.03,3.14-3.96,6.52-6.64,9.15,1.44-3.55,3.61-6.63,5.69-9.77,2.11-3.09,4.28-6.31,6.64-9.15h0Z" fill="#dcb56d"/>
+        <path d="M74.33,29.38c2.82-3.41,6.19-6.24,9.79-8.78-2.92,3.31-6.1,6.35-9.79,8.78h0Z" fill="#dcb56d"/>
+        <path d="M97.79,25.03c-3.3,1.84-6.68,3.51-10.09,5.1-3.41,1.52-6.87,3.32-10.56,4.06,3.14-2.19,6.64-3.6,10.09-5.1,3.45-1.44,7.03-2.96,10.56-4.06h0Z" fill="#dcb56d"/>
+        <path d="M78.81,39.59c4.22-1.32,8.59-1.86,12.99-2.03-4.25,1.18-8.57,2-12.99,2.03h0Z" fill="#dcb56d"/>
+        <path d="M36.52,6.74c2.33,2.98,4.51,6.05,6.61,9.17,2.04,3.13,4.35,6.27,5.66,9.79-2.66-2.76-4.59-6-6.61-9.17-1.96-3.19-4.02-6.48-5.66-9.79h0Z" fill="#dcb56d"/>
+        <path d="M53.88,23.2c-1.97-3.96-3.18-8.19-4.04-12.52,1.83,4.01,3.32,8.15,4.04,12.52h0Z" fill="#dcb56d"/>
+        <path d="M20.98,24.86c3.57,1.23,7.08,2.61,10.54,4.09,3.41,1.52,7.06,2.89,10.08,5.13-3.73-.87-7.12-2.53-10.54-4.09-3.38-1.61-6.9-3.24-10.08-5.13h0Z" fill="#dcb56d"/>
+        <path d="M44.5,29.22c-3.81-2.25-7.13-5.14-10.2-8.3,3.72,2.37,7.22,5.03,10.2,8.3h0Z" fill="#dcb56d"/>
+        <path d="M39.91,39.37c-4.42.19-8.77-.43-13.08-1.4,4.41-.04,8.79.28,13.08,1.4h0Z" fill="#dcb56d"/>
+      </g>
+      <path d="M75.52,60.98c-3.74,0-7.46-.29-11.36-.89-.01,0-.03,0-.04,0l-11.9-2.18c-.5-.09-1-.18-1.49-.28-3.79-.7-7.36-1.36-11.17-1.82-3.73-.45-7.4-.67-10.92-.67-3.9,0-7.76.28-11.47.83-4.08.61-7.94,1.53-12.03,2.52-1.15.28-2.33.56-3.53.84-.1.02-.2.03-.3.03-.56,0-1.07-.36-1.25-.91-.21-.65.11-1.36.74-1.62l7.6-3.25c6.52-2.78,12.84-6.23,19.32-10.54l2.85-1.9s.03-.02.05-.03c.42-.25.94-.4,1.43-.4.36,0,.69.08.98.22l8.09,4.1,9.61-7.42c.24-.18.52-.28.81-.28.18,0,.37.04.55.12l1.11.5,6.73-6.04c.37-.34.83-.51,1.3-.51s.95.18,1.36.53l9.27,7.74,2.16-.85c.16-.06.32-.09.48-.09.26,0,.52.08.74.23l9.81,6.67,5.55-2.87c.43-.22.87-.34,1.31-.34.52,0,1.02.16,1.48.47l5.61,3.8c5.42,3.68,11.29,6.29,15.8,8.15l4.41,1.82c.62.26.95.94.76,1.59-.17.57-.69.95-1.27.95-.07,0-.15,0-.22-.02-3.93-.67-7.75-.99-11.68-.99s-7.63.29-12.3.9l-9.79,1.29c-3.04.4-6.12.6-9.17.6Z" fill="#ece3d6"/>
+      <path d="M84.52,59.07c-6.84.9-13.44.75-20.16-.28l-11.9-2.18c-4.29-.79-8.39-1.58-12.74-2.1-7.6-.91-15.16-.96-22.73.16-5.32.79-10.28,2.12-15.66,3.38l7.6-3.25c6.89-2.94,13.31-6.52,19.53-10.66l2.85-1.9c.29-.17.8-.29,1.13-.13l8.83,4.48,10.27-7.93,1.89.86,7.37-6.62c.3-.27.63-.21.94.04l9.87,8.24,2.88-1.14,10.46,7.11,6.24-3.24c.5-.26.98-.26,1.44.05l5.61,3.8c5.02,3.4,10.43,5.96,16.03,8.28l4.41,1.82c-8.54-1.45-15.93-1.21-24.37-.1l-9.78,1.29Z" fill="#262e1e"/>
+      <g>
+        <path d="M75.63,50.51l1.66,3.31c-1.89-1.28-3.52-2.64-5.15-4.16l-5.33-4.96c.87,3.22,2.23,5.88,3.54,8.84-3.55-2.93-5.92-7.21-7.89-11.38l-7.17,4.91,5.35-9.07c0-1.09,0-2.18.58-3.09l11.77,10.8c1.37,1.13,2.59,2.24,4.24,3.16-1.23-2.17-2.33-4.12-2.44-6.55l14.51,10.81c-3.25-1.09-6.29-2.63-9.62-4.1,1.67,2.53,3.93,4.29,6.14,6.25-1.94-.43-3.63-1.19-5.38-2.01l-4.79-2.77Z" fill="#f4eeec"/>
+        <path d="M35.11,49.37l-3.49-2c-2.62,1.14-5.16,2.28-7.91,3.31l8.17-6.59,5.96,3.47-2.73,1.8Z" fill="#f4eeec"/>
+        <path d="M105.07,54.51c-3.65-.38-6.93-1.45-10.15-3.01-1.06-1.8-1.94-3.58-2.63-5.55l3.73,2.73c2.91,2.15,5.9,4.01,9.05,5.83Z" fill="#f4eeec"/>
+        <path d="M43.96,50.51c-1.18.57-2.47.74-3.91.89l7.78-5.44,2.35.97c-2.08,1.28-4.03,2.53-6.22,3.58Z" fill="#f4eeec"/>
+      </g>
+    </symbol>
+  </defs>
+</svg>
+
+<!-- NAV -->
+<header class="sticky top-0 z-50 bg-isabelline/90 backdrop-blur border-b border-taupe-soft" style="background:color-mix(in oklab, var(--isabelline) 92%, transparent); backdrop-filter:blur(8px)">
+  <div class="max-w-6xl mx-auto px-6 md:px-8 h-20 flex items-center justify-between">
+    <a href="index.html" class="flex items-center gap-3 shrink-0" aria-label="Elora home">
+      <svg width="80" height="41" style="transform:translateY(-8px)"><use href="#elora-mark"/></svg>
+      <span class="font-display text-3xl" style="font-weight:500; letter-spacing:.08em">ELORA</span>
+    </a>
+    <nav class="hidden md:flex items-center gap-9">
+      <a href="index.html#about" class="nav-link">About</a>
+      <a href="index.html#approach" class="nav-link">Approach</a>
+      <a href="index.html#areas-of-care" class="nav-link">Care</a>
+      <a href="index.html#faq" class="nav-link">FAQs</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </nav>
+    <div class="flex items-center gap-4">
+      <a href="contact.html" class="btn btn-primary hidden sm:inline-flex">Contact us</a>
+      <button id="menu-toggle" class="md:hidden p-2 -mr-2" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
+        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="var(--pine)" stroke-width="1.6" stroke-linecap="round"><path d="M2 6h18M2 11h18M2 16h18"/></svg>
+      </button>
+    </div>
+  </div>
+  <div id="mobile-nav" class="mobile-menu md:hidden border-t border-taupe-soft">
+    <div class="max-w-6xl mx-auto px-6 py-5 flex flex-col gap-5">
+      <a href="index.html#about" class="nav-link">About</a>
+      <a href="index.html#approach" class="nav-link">Approach</a>
+      <a href="index.html#areas-of-care" class="nav-link">Care</a>
+      <a href="index.html#faq" class="nav-link">FAQs</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+      <a href="contact.html" class="btn btn-primary w-fit">Contact us</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="pt-10 pb-16 md:pt-14 md:pb-24">
+    <div class="max-w-6xl mx-auto px-6 md:px-8">
+
+      <header class="max-w-3xl">
+        <h1 class="font-display" style="font-weight:500; font-size:clamp(2.1rem,4vw,3rem); line-height:1.12">Legal disclosures and patient rights.</h1>
+        <p class="mt-3 text-coin text-sm">Elora Behavioral Health &middot; Effective January 2027</p>
+        <p class="mt-5 text-coin" style="font-size:18px; line-height:1.65">At Elora Behavioral Health, we are committed to providing compassionate, accessible, and high-quality psychiatric care in a safe, respectful, and supportive environment. We believe every patient deserves to be treated with dignity, honesty, and respect.</p>
+        <p class="mt-4 text-coin" style="font-size:18px; line-height:1.65">The following information outlines your rights as a patient, your responsibilities, and important disclosures regarding the services we provide.</p>
+      </header>
+
+      <div class="mt-10 lg:mt-14 lg:grid lg:grid-cols-[15rem_minmax(0,1fr)] lg:gap-16">
+
+        <!-- TABLE OF CONTENTS -->
+        <aside class="lg:sticky lg:self-start" style="top:6.5rem">
+          <details class="toc card lg:border-0 lg:bg-transparent" open>
+            <summary class="toc-summary lg:hidden">Contents</summary>
+            <nav aria-label="On this page" class="toc-list">
+              <ol>
+                <li><a href="#provider">Provider information and scope of services</a></li>
+                <li><a href="#rights">Patient rights</a></li>
+                <li><a href="#responsibilities">Patient responsibilities</a></li>
+                <li><a href="#privacy">Privacy and confidentiality</a></li>
+                <li><a href="#consent">Informed consent and medication management</a></li>
+                <li><a href="#telehealth">Telehealth services</a></li>
+                <li><a href="#emergency">Emergency and crisis services</a></li>
+                <li><a href="#financial">Financial responsibilities and insurance</a></li>
+                <li><a href="#access">Nondiscrimination and accessibility</a></li>
+                <li><a href="#website">Website information disclaimer</a></li>
+                <li><a href="#complaints">Complaints and grievances</a></li>
+                <li><a href="#changes">Changes to policies and disclosures</a></li>
+                <li><a href="#contact-info">Contact information</a></li>
+              </ol>
+            </nav>
+          </details>
+        </aside>
+
+        <!-- DOCUMENT -->
+        <div class="legal-doc max-w-3xl mt-8 lg:mt-0">
+
+          <section id="provider">
+            <h2>1. Provider information and scope of services</h2>
+            <p>Elora Behavioral Health is a psychiatric practice led by Suzanne Perakathu, APRN, PMHNP-BC, a board-certified Psychiatric-Mental Health Nurse Practitioner licensed as an Advanced Practice Registered Nurse in Texas.</p>
+            <p>Our services include psychiatric evaluations, diagnosis and treatment of mental health conditions, medication management, and ongoing psychiatric follow-up care.</p>
+            <p>Psychiatric nurse practitioners are not physicians or psychiatrists. They are advanced practice registered nurses with specialized graduate education and clinical training in psychiatric and mental health care. Prescribing and other clinical services are provided within applicable Texas laws and professional standards.</p>
+            <p>While psychotherapy is an important component of mental health treatment, our primary focus is psychiatric evaluation and medication management. Patients may be referred to qualified therapists, counselors, psychologists, or other healthcare professionals when clinically appropriate.</p>
+          </section>
+
+          <section id="rights">
+            <h2>2. Patient rights</h2>
+            <p>As a patient of Elora Behavioral Health, you have the right to:</p>
+            <ul>
+              <li>Receive respectful, compassionate, and nondiscriminatory care.</li>
+              <li>Be informed about your diagnosis, recommended treatment, medications, potential risks, benefits, and reasonable alternatives.</li>
+              <li>Participate actively in decisions regarding your treatment.</li>
+              <li>Accept or refuse recommended treatment, subject to applicable laws and clinical considerations.</li>
+              <li>Receive care in an environment that respects your privacy, dignity, and personal beliefs.</li>
+              <li>Have your personal and medical information protected in accordance with applicable privacy laws.</li>
+              <li>Request access to your medical records and obtain copies as permitted by law.</li>
+              <li>Ask questions and receive understandable explanations regarding your treatment.</li>
+              <li>Be informed of applicable fees, payment policies, and financial responsibilities.</li>
+              <li>Request referrals or seek a second opinion.</li>
+              <li>Express concerns or file complaints without retaliation.</li>
+              <li>Discontinue treatment or request a transfer of care, subject to applicable clinical and legal considerations.</li>
+            </ul>
+          </section>
+
+          <section id="responsibilities">
+            <h2>3. Patient responsibilities</h2>
+            <p>We believe effective psychiatric care is built on communication, mutual respect, and collaboration.</p>
+            <p>Patients are expected to:</p>
+            <ul>
+              <li>Provide accurate and complete information regarding medical history, psychiatric symptoms, medications, and substance use.</li>
+              <li>Inform the provider of significant changes in symptoms, health conditions, or medications.</li>
+              <li>Participate in treatment planning and follow agreed-upon treatment recommendations.</li>
+              <li>Take medications only as prescribed and communicate concerns or side effects promptly.</li>
+              <li>Attend scheduled appointments and follow appointment cancellation policies.</li>
+              <li>Maintain respectful communication with providers and staff.</li>
+              <li>Fulfill financial obligations according to practice policies.</li>
+              <li>Follow applicable medication management and controlled substance policies.</li>
+            </ul>
+            <p>Failure to follow essential treatment or safety requirements may result in reassessment of the treatment plan or termination of the provider-patient relationship, consistent with applicable laws and professional obligations.</p>
+          </section>
+
+          <section id="privacy">
+            <h2>4. Privacy and confidentiality</h2>
+            <p>Elora Behavioral Health is committed to protecting the confidentiality of patient health information in accordance with the Health Insurance Portability and Accountability Act (HIPAA), applicable Texas laws, and other relevant privacy requirements.</p>
+            <p>Patient information may be used or disclosed for treatment, payment, healthcare operations, and other purposes permitted or required by law.</p>
+            <p>Patients have certain rights concerning their protected health information, including the right to request access, amendments, confidential communications, and certain restrictions on disclosures.</p>
+            <p>For complete information, please review our HIPAA Notice of Privacy Practices and Website Privacy Policy.</p>
+          </section>
+
+          <section id="consent">
+            <h2>5. Informed consent and medication management</h2>
+            <p>Psychiatric treatment is individualized based on each patient's clinical needs.</p>
+            <p>Medication recommendations are made after considering symptoms, medical history, potential benefits, risks, treatment alternatives, and relevant clinical information.</p>
+            <p>Patients are encouraged to ask questions and participate in treatment decisions.</p>
+            <p>Prescriptions, including controlled substances, are issued only when clinically appropriate and consistent with applicable federal and Texas laws.</p>
+            <p>A psychiatric evaluation or appointment does not guarantee that medication, including controlled substances, will be prescribed.</p>
+            <p>Additional monitoring, laboratory testing, medical records, referrals, or follow-up appointments may be required to support safe and effective treatment.</p>
+          </section>
+
+          <section id="telehealth">
+            <h2>6. Telehealth services</h2>
+            <p>Elora Behavioral Health may offer psychiatric services through secure telehealth technology when clinically appropriate and legally permitted.</p>
+            <p>Telehealth appointments are subject to applicable professional standards, patient location requirements, privacy safeguards, and prescribing regulations.</p>
+            <p>Patients should understand that telehealth has limitations, including potential technical disruptions and situations in which an in-person evaluation may be necessary.</p>
+            <p>The provider may recommend or require in-person care, referral, or a higher level of care when clinically indicated.</p>
+            <p>Telehealth services are not intended to replace emergency psychiatric or medical care.</p>
+          </section>
+
+          <section id="emergency">
+            <h2>7. Emergency and crisis services</h2>
+            <p>Elora Behavioral Health is not an emergency psychiatric service or crisis response facility.</p>
+            <p>Website messages, appointment requests, emails, and routine patient communications should not be used for emergencies.</p>
+            <div class="card emergency">
+              <p style="font-weight:600">If you are experiencing a medical or psychiatric emergency, experiencing immediate danger, or are concerned about your immediate safety:</p>
+              <ul>
+                <li>Call 911 or go to the nearest emergency department.</li>
+                <li>Call or text <a href="tel:988" class="link-underline">988</a> to reach the Suicide &amp; Crisis Lifeline for crisis support.</li>
+                <li>Do not wait for a response from Elora Behavioral Health during an emergency.</li>
+              </ul>
+            </div>
+          </section>
+
+          <section id="financial">
+            <h2>8. Financial responsibilities and insurance</h2>
+            <p>Patients are responsible for understanding their insurance benefits, including copayments, deductibles, coinsurance, and coverage limitations.</p>
+            <p>Insurance coverage and reimbursement are determined by the patient's insurance plan and applicable payer requirements.</p>
+            <p>Payment obligations, appointment cancellation fees, and other applicable charges are described in our Financial Policy.</p>
+            <h3>Good Faith Estimate notice</h3>
+            <p>Under the No Surprises Act, patients who are uninsured or choose not to use their health insurance have the right to receive a Good Faith Estimate of expected healthcare charges.</p>
+            <p>Elora Behavioral Health provides Good Faith Estimates upon request and when scheduling eligible services, in accordance with federal requirements.</p>
+            <p>If your final bill is at least $400 more than your Good Faith Estimate, you may be eligible to dispute the charges.</p>
+            <p>To request a Good Faith Estimate, please contact our office at <a href="tel:+19566250742" class="link-underline">956-625-0742</a>.</p>
+          </section>
+
+          <section id="access">
+            <h2>9. Nondiscrimination and accessibility</h2>
+            <p>Elora Behavioral Health is committed to providing compassionate, respectful, and accessible psychiatric care. We do not discriminate in violation of applicable federal or Texas law.</p>
+            <p>We strive to provide reasonable accommodations for individuals with disabilities and appropriate assistance to patients who need help accessing our services.</p>
+            <p>For accessibility-related questions or assistance, please contact our office at <a href="tel:+19566250742" class="link-underline">956-625-0742</a>.</p>
+          </section>
+
+          <section id="website">
+            <h2>10. Website information disclaimer</h2>
+            <p>Information provided on the Elora Behavioral Health website is intended for general educational and informational purposes only.</p>
+            <p>Website content does not constitute individualized medical advice, diagnosis, or treatment and should not replace consultation with a qualified healthcare professional.</p>
+            <p>Use of this website, including submission of a general inquiry or appointment request, does not by itself establish a provider-patient relationship.</p>
+            <p>A provider-patient relationship is established through the practice's clinical intake and acceptance process.</p>
+            <p>Elora Behavioral Health does not guarantee specific treatment outcomes. Individual responses to psychiatric treatment may vary.</p>
+          </section>
+
+          <section id="complaints">
+            <h2>11. Complaints and grievances</h2>
+            <p>Elora Behavioral Health is committed to providing safe, ethical, and compassionate psychiatric care. Patients have the right to express concerns or file complaints regarding their care, privacy, or treatment without fear of retaliation.</p>
+            <p>We encourage patients to contact our office directly with questions or concerns. However, patients are not required to contact Elora Behavioral Health before submitting a complaint to an appropriate regulatory agency.</p>
+
+            <h3>Consumer complaints: Texas Attorney General</h3>
+            <p>Patients may file a consumer complaint with the Texas Office of the Attorney General's Consumer Protection Division regarding potential violations of applicable consumer protection laws.</p>
+            <p>Website: <a href="https://www.texasattorneygeneral.gov/consumer-protection" class="link-underline" target="_blank" rel="noopener">Texas Attorney General &ndash; Consumer Protection</a></p>
+
+            <h3>Nursing complaints: Texas Board of Nursing</h3>
+            <p>Patients may file a complaint against a nurse licensed in Texas with the Texas Board of Nursing if they believe the nurse has violated the Texas Nursing Practice Act or applicable Board rules.</p>
+            <p>Online complaint portal: <a href="https://www.bon.texas.gov/" class="link-underline" target="_blank" rel="noopener">Texas Board of Nursing &ndash; File a Complaint</a></p>
+            <address>
+              Mailing address:<br>
+              Texas Board of Nursing &ndash; Enforcement<br>
+              1801 Congress Avenue, Suite 10-200<br>
+              Austin, Texas 78701<br>
+              Email: <a href="mailto:complaints@bon.texas.gov" class="link-underline">complaints@bon.texas.gov</a><br>
+              Phone: <a href="tel:+18008213205" class="link-underline">1-800-821-3205</a>
+            </address>
+
+            <h3>Privacy complaints: U.S. Department of Health and Human Services</h3>
+            <p>Patients who believe their health information privacy rights have been violated may file a complaint with the U.S. Department of Health and Human Services, Office for Civil Rights (OCR).</p>
+            <p>Website: <a href="https://www.hhs.gov/hipaa/filing-a-complaint/index.html" class="link-underline" target="_blank" rel="noopener">HHS &ndash; Filing a HIPAA Complaint</a></p>
+
+            <p>Elora Behavioral Health will not retaliate against any patient for exercising their legal rights or filing a complaint in good faith.</p>
+          </section>
+
+          <section id="changes">
+            <h2>12. Changes to policies and disclosures</h2>
+            <p>Elora Behavioral Health reserves the right to update website policies, practice procedures, and legal disclosures as permitted by applicable law.</p>
+            <p>Any changes will be reflected on the website or communicated to patients when legally required.</p>
+            <p>Nothing in these disclosures are intended to waive or limit patient rights established under applicable federal or Texas law.</p>
+          </section>
+
+          <section id="contact-info">
+            <h2>Contact information</h2>
+            <address>
+              Elora Behavioral Health<br>
+              Suzanne Perakathu, APRN, PMHNP-BC<br>
+              P.O. Box 105<br>
+              Harlingen, TX 78551<br>
+              Phone: <a href="tel:+19566250742" class="link-underline">956-625-0742</a>
+            </address>
+            <p>For confidential medical communication, please use the practice's designated secure communication methods rather than general website forms or ordinary email.</p>
+          </section>
+
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- FOOTER -->
+<footer class="border-t border-taupe-soft">
+  <div class="bg-isabelline border-b border-taupe-soft">
+    <div class="max-w-6xl mx-auto px-6 md:px-8 py-3">
+      <ul class="flex flex-wrap justify-center gap-x-8 gap-y-2 text-sm">
+        <li><a href="index.html#about" class="link-underline">About</a></li>
+        <li><a href="index.html#approach" class="link-underline">Approach</a></li>
+        <li><a href="index.html#areas-of-care" class="link-underline">Care</a></li>
+        <li><a href="index.html#faq" class="link-underline">FAQs</a></li>
+        <li><a href="legal.html" class="link-underline">Legal &amp; patient rights</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="bg-sand">
+    <div class="max-w-6xl mx-auto px-6 md:px-8 pt-0 pb-12">
+      <div class="grid md:grid-cols-3 gap-2 md:gap-8">
+        <div class="pt-2">
+          <a href="index.html" aria-label="Elora home">
+            <img src="brand_assets/Asset 15.svg" alt="Elora Behavioral Health" style="width:152px; height:auto;">
+          </a>
+          <p class="mt-5 text-coin" style="font-size:15px; line-height:1.5">Psychiatric care led by<br>Suzanne Perakathu,<br>APRN, PMHNP-BC</p>
+        </div>
+        <div class="md:pt-12 text-coin">
+          <p style="font-size:16px; font-weight:600">info@elorabh.com</p>
+          <p class="mt-3 text-sm" style="max-width:26ch">Please note that by contacting us via email, you acknowledge that it is not a secure form of communication.</p>
+        </div>
+        <div class="md:pt-12 text-coin">
+          <p style="font-size:16px; font-weight:600; white-space:nowrap">(956) 625-0742</p>
+          <p class="mt-3 text-sm" style="max-width:26ch">Telehealth &amp; in-person visits available. *Telehealth services require the patient to be physically located in the state of Texas at the time of their visit.</p>
+        </div>
+      </div>
+      <div class="mt-10 pt-6 border-t border-taupe-soft text-xs text-coin">
+        <span>© 2026 Elora Behavioral Health. All rights reserved.</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  (function(){
+    var toggle = document.getElementById('menu-toggle');
+    var menu = document.getElementById('mobile-nav');
+    toggle.addEventListener('click', function(){
+      var open = menu.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    menu.querySelectorAll('a').forEach(function(a){
+      a.addEventListener('click', function(){
+        menu.classList.remove('open');
+        toggle.setAttribute('aria-expanded', 'false');
+      });
+    });
+  })();
+  (function(){
+    var toc = document.querySelector('.toc');
+    if(toc && window.matchMedia('(max-width:1023px)').matches){ toc.removeAttribute('open'); }
+  })();
+</script>
+
+</body>
+</html>
